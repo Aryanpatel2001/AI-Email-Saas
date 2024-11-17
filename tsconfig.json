@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    /* Base Options: */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "moduleDetection": "force",
+    "isolatedModules": true,
+
+    /* Strictness */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "checkJs": true,
+
+    /* Bundled projects */
+    "lib": ["dom", "dom.iterable", "ES2022"],
+    "noEmit": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "jsx": "preserve",
+    "plugins": [{ "name": "next" }],
+    "incremental": true,
+
+    /* Path Aliases */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    ".eslintrc.cjs",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.cjs",
+    "**/*.js",
+    ".next/types/**/*.ts",
+    "src/**/*.ts"
+  ],
+  "exclude": ["node_modules", "**/*.test.ts"]
+}
